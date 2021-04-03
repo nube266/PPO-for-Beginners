@@ -1,0 +1,21 @@
+version: "2.4"
+
+services:
+    ppo_for_beginners:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        image: ${IMAGE_NAME}
+        container_name: ${CONTAINER_NAME}
+        tty: true
+        shm_size: 4G
+        privileged: true
+        environment:
+            # Display X Server GUI.
+            - DISPLAY
+            - QT_X11_NO_MITSHM=1
+        volumes:
+            # configure GUI
+            - /tmp/.X11-unix:/tmp/.X11-unix:rw
+            - ./src:/root/home/src
+        network_mode: host

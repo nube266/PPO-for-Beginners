@@ -30,9 +30,9 @@ pytz==2020.1
 scipy==1.5.2
 six==1.15.0
 stable-baselines==2.10.1
-tensorboard==1.14.0
-tensorflow==1.14.0
-tensorflow-estimator==1.14.0
+tensorboard==1.5.0
+tensorflow==1.5.0
+tensorflow-estimator==1.5.0
 termcolor==1.1.0
 torch==1.6.0
 Werkzeug==1.0.1
