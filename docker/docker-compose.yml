@@ -17,5 +17,5 @@ services:
         volumes:
             # configure GUI
             - /tmp/.X11-unix:/tmp/.X11-unix:rw
-            - ./src:/root/home/src
+            - ..:/root/home/ppo_for_beginners
         network_mode: host
